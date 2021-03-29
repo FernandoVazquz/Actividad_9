@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Invertir una cadena con Javascript</title>
+</head>
+
+<body>
+
+    <h1>Invertir una cadena.</h1>
+
+    <input type="text" id="texto">
+    <button onclick="invertir()">Cambiar texto.</button>
+    
+    <script>
+        function invertir() {
+            let texto = document.getElementById("texto");
+            texto.value = texto.value.split("").reverse().join("");
+        }
+
+    </script>
+
+</body>
+</html>
